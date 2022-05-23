@@ -20,9 +20,13 @@ def yellow():
 # need to repeat forever
 while True:
   for event in sense.stick.get_events():
-    print(event.direction, event.action)sense.stick.direction_up = red
+    print(event.direction, event.action)
+  sense.stick.direction_up = red
   sense.stick.direction_down = blue
-  #sense.stick.direction_left = green
-  #sense.stick.direction_right = yellow
+  sense.stick.direction_left = green
+  sense.stick.direction_right = yellow
   sense.stick.direction_middle = sense.clear
+  
+
+
 
