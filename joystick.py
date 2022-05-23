@@ -23,3 +23,8 @@ sense.stick.direction_down = blue
 #sense.stick.direction_left = green
 #sense.stick.direction_right = yellow
 sense.stick.direction_middle = sense.clear
+
+# need to create a repeat forever
+
+while True:
+  pass
