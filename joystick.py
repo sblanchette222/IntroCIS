@@ -2,10 +2,8 @@ from sense_hat import SenseHat
 sense = SenseHat()
 sense.clear()
 
-while True:
-  for event in sense.stick.get_events():
-    print(event.direction, event.action)
-    
+
+# create co,ors
 def red():
   sense.clear(255, 0, 0)
   
@@ -17,14 +15,14 @@ def green():
   
 def yellow():
   sense.clear(255, 255, 0)
+
   
-sense.stick.direction_up = red
-sense.stick.direction_down = blue
-#sense.stick.direction_left = green
-#sense.stick.direction_right = yellow
-sense.stick.direction_middle = sense.clear
-
-# need to create a repeat forever
-
+# need to repeat forever
 while True:
-  pass
+  for event in sense.stick.get_events():
+    print(event.direction, event.action)sense.stick.direction_up = red
+  sense.stick.direction_down = blue
+  #sense.stick.direction_left = green
+  #sense.stick.direction_right = yellow
+  sense.stick.direction_middle = sense.clear
+
