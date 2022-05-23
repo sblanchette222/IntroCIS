@@ -17,7 +17,7 @@ print("The pressure is", pressure)
 
 # show values on Sense HAT / one-time
 
-sense.show_message(temp)
+sense.show_message(str(temp))
 
 
 #make a while True loop
